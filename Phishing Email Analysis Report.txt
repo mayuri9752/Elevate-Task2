@@ -1,0 +1,89 @@
+Phishing Email Analysis Report
+Sample Phishing Email
+Subject: Action Required: Unusual Sign-in Activity Detected
+From: support@apple-security-team.com
+To: user@example.com
+
+Email Body:
+
+Dear Customer,
+
+We detected unusual sign-in activity on your Apple ID from a new device. Your account has been temporarily locked to protect your security.
+
+Please verify your identity by clicking the link below:
+https://appleid-verify-login.com
+
+Failure to verify within 24 hours will lead to permanent suspension of your Apple ID.
+
+Regards,
+Apple Security Team
+
+Attachment: Apple_ID_Verification.htm
+
+->Phishing Analysis Steps
+1. Sender Email Spoofing
+Sender: support@apple-security-team.com
+
+This domain does not belong to Apple. Official Apple emails come from @apple.com.
+Spoofed / fake sender email detected
+
+2. Email Header Discrepancies
+Using an online header analyzer (e.g., MXToolbox), we would likely find:
+
+Return-Path mismatch
+
+SPF or DKIM authentication failures
+
+Origin server not associated with Apple
+Header anomalies confirm phishing attempt
+
+3. Suspicious Links / Attachments
+Displayed URL: https://appleid-verify-login.com
+
+Real URL (hover): http://phishingsite.ru/login.php
+
+Attachment: Apple_ID_Verification.htm (potential phishing page)
+Links and attachments are malicious
+
+4. Urgent or Threatening Language
+Phrases include:
+
+“Unusual sign-in activity”
+
+“Temporarily locked”
+
+“Permanent suspension in 24 hours”
+Uses urgency and fear to manipulate user
+
+5. Mismatched URLs
+Visible URL implies legitimacy
+
+Hovered link shows a completely different, malicious domain
+
+URL mismatch — common phishing tactic
+
+6. Spelling / Grammar Errors
+No blatant spelling errors
+
+Tone is generic and aggressive, which is not typical for professional companies
+Suspicious tone even if spelling is correct
+ 
+-> Summary of Phishing Trait
+#      Trait                                 Evidence
+1	Spoofed Email Address - Fake domain (@apple-security-team.com)
+2	Header Discrepancies   - Mismatched Return-Path, SPF failures
+3	Suspicious Links	      - Redirect to phishingsite.ru
+4	Malicious Attachment   - .htm file mimicking Apple login
+5	Urgency & Threats	      - 24-hour deadline, account suspension
+6	Mismatched URLs	     - Hover shows a different link
+7	Grammar/Tone Issues   - Robotic and threatening language
+
+-> Final Verdict
+This is a highly suspicious phishing email. It attempts to:
+
+1.Trick the user with a spoofed domain
+2. Steal login credentials via a fake login page
+3. Use urgency and fear to drive fast action
+4. Distribute a malicious file to compromise the user
+
+Action: Do not click, do not open attachments, and report to your security team or email provider
